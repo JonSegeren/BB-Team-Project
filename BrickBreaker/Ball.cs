@@ -6,31 +6,33 @@ namespace BrickBreaker
 {
     public class Ball
     {
-        public int x, y, xSpeed, ySpeed, size;
+        public int xSpeed, ySpeed, size;
+        public double Xangle, Yangle, x, y;
         public Color colour;
 
         public static Random rand = new Random();
-
-        public Ball(int _x, int _y, int _xSpeed, int _ySpeed, int _ballSize)
+        
+        public Ball(int _x, int _y, int _xSpeed, int _ySpeed, int _ballSize, double _Xangle, double _Yangle)
         {
             x = _x;
             y = _y;
             xSpeed = _xSpeed;
             ySpeed = _ySpeed;
             size = _ballSize;
-               
+            Xangle = _Xangle;
+            Yangle = _Yangle;      
         }
 
         public void Move()
         {
-            x = x + xSpeed;
-            y = y + ySpeed;
+            x = x + xSpeed*Xangle;
+            y = y + ySpeed*Yangle;
         }
 
         public bool BlockCollision(Block b)
         {
             Rectangle blockRec = new Rectangle(b.x, b.y, b.width, b.height);
-            Rectangle ballRec = new Rectangle(x, y, size, size);
+            Rectangle ballRec = new Rectangle(Convert.ToInt32(x), Convert.ToInt32(y), size, size);
 
             if (ballRec.IntersectsWith(blockRec))
             {
@@ -42,15 +44,12 @@ namespace BrickBreaker
 
         public void PaddleCollision(Paddle p, bool pMovingLeft, bool pMovingRight)
         {
-            Rectangle ballRec = new Rectangle(x, y, size, size);
-            Rectangle paddleRec = new Rectangle(p.x, p.y, p.width, p.height);
+            Rectangle ballRec = new Rectangle(Convert.ToInt32(x), Convert.ToInt32(y), size, size);
+            Rectangle paddleRec = new Rectangle(p.x, p.y - 2, p.width, p.height);
 
             if (ballRec.IntersectsWith(paddleRec))
             {
-                if (y + size >= p.y)
-                {
-                    ySpeed *= -1;
-                }
+                ySpeed *= -1;
 
                 if (pMovingLeft)
                     xSpeed = -Math.Abs(xSpeed);
@@ -64,31 +63,32 @@ namespace BrickBreaker
             // Collision with left wall
             if (x <= 0)
             {
+                x = 1;
                 xSpeed *= -1;
             }
             // Collision with right wall
             if (x >= (UC.Width - size))
             {
+                x = UC.Width - size - 1;
                 xSpeed *= -1;
             }
             // Collision with top wall
             if (y <= 2)
             {
+                y = 0;
                 ySpeed *= -1;
             }
         }
 
-        public bool BottomCollision(UserControl UC)
+        public bool BottomCollision(UserControl UC, Paddle p)
         {
-            Boolean didCollide = false;
-
-            if (y >= UC.Height)
+            if (y + size -4 > p.y)
+            //if(y >= UC.Height)
             {
-                didCollide = true;
+                return true;
             }
 
-            return didCollide;
+            return false;
         }
-
     }
 }

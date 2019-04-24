@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 
 namespace BrickBreaker
-{
+{    //
     public class Block
     {
         public int width = 50;

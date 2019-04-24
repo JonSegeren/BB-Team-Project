@@ -19,7 +19,7 @@ namespace BrickBreaker.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,194 @@ namespace BrickBreaker.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;level&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;351&lt;/x&gt;
+        ///    &lt;y&gt;245&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;351&lt;/x&gt;
+        ///    &lt;y&gt;276&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;351&lt;/x&gt;
+        ///    &lt;y&gt;307&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;351&lt;/x&gt;
+        ///    &lt;y&gt;338&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;407&lt;/x&gt;
+        ///    &lt;y&gt;245&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Re [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string level1 {
+            get {
+                return ResourceManager.GetString("level1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;level&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;0&lt;/x&gt;
+        ///    &lt;y&gt;0&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;100&lt;/x&gt;
+        ///    &lt;y&gt;62&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;200&lt;/x&gt;
+        ///    &lt;y&gt;125&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;294&lt;/x&gt;
+        ///    &lt;y&gt;186&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;857&lt;/x&gt;
+        ///    &lt;y&gt;186&lt;/y&gt;
+        ///    &lt;hp&gt;1&lt;/hp&gt;
+        ///    &lt;colour&gt;Red&lt;/colo [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string level3 {
+            get {
+                return ResourceManager.GetString("level3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;level&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;
+        ///      127
+        ///    &lt;/x&gt;
+        ///    &lt;y&gt;
+        ///      32
+        ///    &lt;/y&gt;
+        ///    &lt;hp&gt;
+        ///      2
+        ///    &lt;/hp&gt;
+        ///    &lt;colour&gt;
+        ///      Yellow
+        ///    &lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;
+        ///      239
+        ///    &lt;/x&gt;
+        ///    &lt;y&gt;
+        ///      80
+        ///    &lt;/y&gt;
+        ///    &lt;hp&gt;
+        ///      2
+        ///    &lt;/hp&gt;
+        ///    &lt;colour&gt;
+        ///      Yellow
+        ///    &lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;
+        ///      351
+        ///    &lt;/x&gt;
+        ///    &lt;y&gt;
+        ///      131
+        ///    &lt;/y&gt;
+        ///    &lt;hp&gt;
+        ///      2
+        ///    &lt;/hp&gt;
+        ///    &lt;colour&gt;
+        ///      Yellow
+        ///    &lt;/colour&gt;
+        ///  &lt;/brick [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string level5 {
+            get {
+                return ResourceManager.GetString("level5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;level&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;
+        ///      198
+        ///    &lt;/x&gt;
+        ///    &lt;y&gt;
+        ///      93
+        ///    &lt;/y&gt;
+        ///    &lt;hp&gt;
+        ///      3
+        ///    &lt;/hp&gt;
+        ///    &lt;colour&gt;
+        ///      Green
+        ///    &lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///  &lt;x&gt;
+        ///254
+        ///  &lt;/x&gt;
+        ///  &lt;y&gt;
+        ///    93
+        ///  &lt;/y&gt;
+        ///  &lt;hp&gt;
+        ///    3
+        ///  &lt;/hp&gt;
+        ///  &lt;colour&gt;
+        ///    Green
+        ///  &lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;
+        ///310
+        ///    &lt;/x&gt;
+        ///    &lt;y&gt;
+        ///      93
+        ///    &lt;/y&gt;
+        ///    &lt;hp&gt;
+        ///      3
+        ///    &lt;/hp&gt;
+        ///    &lt;colour&gt;
+        ///      Green
+        ///    &lt;/colour&gt;
+        ///  &lt;/brick&gt;
+        ///  &lt;brick&gt;
+        ///    &lt;x&gt;
+        ///366
+        ///    &lt;/x&gt;
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string level7 {
+            get {
+                return ResourceManager.GetString("level7", resourceCulture);
             }
         }
     }

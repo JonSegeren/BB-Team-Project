@@ -128,7 +128,16 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\level3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level5.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level7.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
